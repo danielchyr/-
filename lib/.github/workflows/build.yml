@@ -28,7 +28,7 @@ jobs:
           flutter create . --project-name food_budget_app --platforms android
           flutter pub add shared_preferences
           flutter pub add dev:flutter_launcher_icons
-          flutter pub run flutter_launcher_icons:main -f flutter_launcher_icons.yaml
+          dart run flutter_launcher_icons -f flutter_launcher_icons.yaml
           flutter build apk --release
 
       - name: 5. 上傳打包好的 APK 供下載
